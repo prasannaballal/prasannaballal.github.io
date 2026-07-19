@@ -11,24 +11,14 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
 import profilepic from '../images/profilepic.jpg';
-
-import {
-  About,
-  ContactSection,
-  ContactType,
-  Hero,
-  HomepageMeta,
-  SkillGroup,
-  Social,
-  TimelineItem,
-} from './dataDef';
+import {About, ContactSection, ContactType, Hero, HomepageMeta, SkillGroup, Social, TimelineItem} from './dataDef';
 
 /**
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Prasanna Ballal Portfolio',
-  description: "Prasanna Ballal Portfolio",
+  description: 'Prasanna Ballal Portfolio',
 };
 
 /**
@@ -45,7 +35,7 @@ export const SectionId = {
   Testimonials: 'testimonials',
 } as const;
 
-export type SectionId = typeof SectionId[keyof typeof SectionId];
+export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 
 /**
  * Hero section
@@ -56,12 +46,14 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Berlin based <strong className="text-stone-100">Senior Software Engineer</strong>, currently working
-        for <strong className="text-stone-100">Automotive Domains</strong> helping build a modern, <br></br> e-mobility platform.
+        I'm a Berlin based <strong className="text-stone-100">Senior Software Engineer</strong>, currently working for{' '}
+        <strong className="text-stone-100">Automotive Domains</strong> helping build a modern, <br></br> e-mobility
+        platform.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, you can find me reading about <strong className="text-stone-100">Stock Market</strong>, <strong className="text-stone-100">History</strong>, <strong className="text-stone-100">Ayurveda</strong> or exploring{' '}
-        <strong className="text-stone-100">Berlin</strong>.
+        In my free time, you can find me reading about <strong className="text-stone-100">Stock Market</strong>,{' '}
+        <strong className="text-stone-100">History</strong>, <strong className="text-stone-100">Ayurveda</strong> or
+        exploring <strong className="text-stone-100">Berlin</strong>.
       </p>
     </>
   ),
@@ -150,9 +142,9 @@ export const skills: SkillGroup[] = [
       {
         name: 'Pair Programming',
         level: 8,
-      }
+      },
     ],
-  }
+  },
 ];
 
 /**
@@ -161,7 +153,7 @@ export const skills: SkillGroup[] = [
 export const education: TimelineItem[] = [
   {
     date: 'July 2013',
-    location: 'MES\'S IMCC, University Of Pune',
+    location: "MES'S IMCC, University Of Pune",
     title: 'Master Of Computer Applications',
     content: <p>I completed my Masters in Computer Applications from University Of Pune with First Class.</p>,
   },
@@ -180,10 +172,13 @@ export const experience: TimelineItem[] = [
     title: 'Senior Software Engineer',
     content: (
       <p>
-        <span>&#8226;</span> Develop a service platform that will seamlessly connect legacy systems and the latest customer-facing apps for <b> car as a software product</b>.<br></br>
-        <span>&#8226;</span> Act as an <b>Anchor</b> for the team to define the tasks in weekly sprint planning and backlog refinement.<br></br>
-        <span>&#8226;</span> As an <b>Anchor</b> for team, with PO participate in PI meeting SAFe(Scaled Agile Framework) along with other teams to decide the features to be developed in the next 12 weeks.
-        Technology stack we are using is <b>Java 11</b> with <b>Spring Boot</b> and <b>Azure</b> .
+        <span>&#8226;</span> Develop a service platform that will seamlessly connect legacy systems and the latest
+        customer-facing apps for <b> car as a software product</b>.<br></br>
+        <span>&#8226;</span> Act as an <b>Anchor</b> for the team to define the tasks in weekly sprint planning and
+        backlog refinement.<br></br>
+        <span>&#8226;</span> As an <b>Anchor</b> for team, with PO participate in PI meeting SAFe(Scaled Agile
+        Framework) along with other teams to decide the features to be developed in the next 12 weeks. Technology stack
+        we are using is <b>Java 11</b> with <b>Spring Boot</b> and <b>Azure</b> .
       </p>
     ),
   },
@@ -192,11 +187,12 @@ export const experience: TimelineItem[] = [
     location: 'Deutsche Bank, Pune, India',
     title: 'Senior Analyst',
     content: (
-      <p >
-        <span>&#8226;</span> Develop a mobile app using React Native for internal job postings available globally in Deutsche Bank Group.<br></br>
+      <p>
+        <span>&#8226;</span> Develop a mobile app using React Native for internal job postings available globally in
+        Deutsche Bank Group.<br></br>
         <span>&#8226;</span> Complete ownership for the technical development of the mobile app.<br></br>
-        <span>&#8226;</span> Closely communicate with stakeholders and transform business requirements into technical solutions.<br></br>
-
+        <span>&#8226;</span> Closely communicate with stakeholders and transform business requirements into technical
+        solutions.<br></br>
       </p>
     ),
   },
@@ -208,7 +204,8 @@ export const experience: TimelineItem[] = [
       <p>
         <span>&#8226;</span> Complete ownership to migrate the legacy Cordova mobile app to the native iOS App.<br></br>
         <span>&#8226;</span> Work with UX Designer for designing new UI for iOS Native apps.<br></br>
-        <span>&#8226;</span> Overcome the performance issues of the app by developing better solutions using native iOS App Development.<br></br>
+        <span>&#8226;</span> Overcome the performance issues of the app by developing better solutions using native iOS
+        App Development.<br></br>
       </p>
     ),
   },
@@ -219,8 +216,10 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         <span>&#8226;</span> Develop iOS app with provided UX designs.<br></br>
-        <span>&#8226;</span> Worked on development of variety of apps from different domain like Home Automation, Finance, Real Time Coaching.<br></br>
-        <span>&#8226;</span> Worked on some POC's for new products using Swift programming language and React JS.<br></br>
+        <span>&#8226;</span> Worked on development of variety of apps from different domain like Home Automation,
+        Finance, Real Time Coaching.<br></br>
+        <span>&#8226;</span> Worked on some POC's for new products using Swift programming language and React JS.
+        <br></br>
       </p>
     ),
   },
@@ -231,8 +230,10 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         <span>&#8226;</span> Develop parsers and transformations for Financial aggregator web application. <br></br>
-        <span>&#8226;</span> Write parsers in Java to read bank statements from CSV, Excel, PDF files. Parsers to read from Email  Address or FTP server. Parsers to read SWIFT statements.<br></br>
-        <span>&#8226;</span> Deploy application on UAT environment and application walkthrough to users and support.<br></br>
+        <span>&#8226;</span> Write parsers in Java to read bank statements from CSV, Excel, PDF files. Parsers to read
+        from Email Address or FTP server. Parsers to read SWIFT statements.<br></br>
+        <span>&#8226;</span> Deploy application on UAT environment and application walkthrough to users and support.
+        <br></br>
       </p>
     ),
   },
@@ -285,5 +286,5 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/prasannaballal'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/prasannaballal/'}
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/prasannaballal/'},
 ];
